@@ -1,0 +1,75 @@
+nav .nav{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    padding: 0 20px;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid 1px var(--text-200);
+    overflow: hidden;
+    background: var(--primary-100);
+}
+
+nav .nav .contenido-nav{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20;
+    flex: 1 0 0;
+    overflow: hidden;
+}
+
+.nav .contenido-nav .logo-contenido{
+    display: flex;
+    max-width: 250px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-contenido .logotipo{
+    display: flex;
+    width: 60px; height: 60px;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-contenido .logotipo-nombre{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 40px;
+    border-left: 1px solid var(--primary-300);
+    padding: 0 15px 0 10px;
+    font-family: var(--fuenteTextoIBM);
+    font-size: var(--tamañoTextoH6);
+    color: var(--text-100);
+}
+
+.contenido-nav .links-contenido{
+    width: 100%;
+    display: flex;
+    gap: 5px;;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.links-contenido .link{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 15px;
+    width: 100px;
+    height: 40px;
+    color: var(--text-100);
+}
+
+.links-contenido .line{
+    width: 1px;
+    height: 45px;
+    background-color: var(--primary-300);
+    margin: 0 10px 0 10px;
+}

@@ -1,0 +1,53 @@
+@import url('zodiak.css');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap');
+
+:root{
+    /* REGLAS DE FUENTES DEL DOCUMENTO */
+    --fuenteTexto: 'Zodiak-Regular';
+    --fuenteTextoThin: 'Zodiak-Thin';
+    --fuenteTextoLight:'Zodiak-Light';
+    --fuenteTextoItalic: 'Zodiak-Italic';
+    --fuenteTextoBold: 'Zodiak-Bold';
+    --fuenteTextoBlack: 'Zodiak-Black';
+
+    --fuenteTextoIBM: 'IBM Plex Sans', sans-serif;
+
+    --tamañoTextoPequeño: 14.4px;
+    --tamañoTexto: 18px;
+    --tamañoTextoH6:22.5px;
+    --tamañoTextoH5:28.13px;
+    --tamañoTextoH4:35.16px;
+    --tamañoTextoH3:43.95px;
+    --tamañoTextoH2:54.93px;
+    --tamañoTextoH1:68.66px;
+
+
+    /* COLORES DEL DOCUMENTO */
+    --primary-100:#191919;
+    --primary-200:#3f3f3f;
+    --primary-300:#989898;
+    --accent-100:#FFC300;
+    --accent-200:#916600;
+    --text-100:#f7f7f2;
+    --text-200:#d8d8d3;
+    --bg-100:#1C1C1C;
+    --bg-200:#2b2b2b;
+    --bg-300:#434343;
+
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: var(--fuenteTexto);
+    font-size: var(--tamañoTexto);
+    background-color: var(--bg-100);
+}

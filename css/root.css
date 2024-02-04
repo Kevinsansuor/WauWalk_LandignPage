@@ -1,6 +1,7 @@
 @import url('zodiak.css');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap');
 
+
 :root{
     /* REGLAS DE FUENTES DEL DOCUMENTO */
     --fuenteTexto: 'Zodiak-Regular';

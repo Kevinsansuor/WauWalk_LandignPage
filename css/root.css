@@ -26,6 +26,7 @@
     --primary-100:#191919;
     --primary-200:#3f3f3f;
     --primary-300:#989898;
+    --primary-300-50:hsla(0, 0%, 60%, 0.5);
     --accent-100:#FFC300;
     --accent-200:#916600;
     --text-100:#f7f7f2;

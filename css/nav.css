@@ -60,13 +60,27 @@ nav .nav .contenido-nav{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 5px 20px;
+    padding: 5px 35px;
     width: fit-content;
     height: 40px;
     color: var(--text-100);
     font-family: var(--fuenteTextoIBM);
     border-radius: 2.5px;
+    cursor: pointer;
 }
+
+.links-contenido .link:hover{
+animation:blur-in .5s linear both;
+border: solid 2px var(--primary-300);
+}
+
+.links-contenido > .link.active{
+    background-color: var(--accent-100);
+    color: var(--primary-100);
+    box-shadow:  5px 5px 15px hsla(0, 0%, 4%, 0.5),
+             -5px -5px 15px hsla(0, 0%, 18%, 0.5);
+}
+
 
 .links-contenido .link.cta{
     color: var(--primary-100);
@@ -76,11 +90,10 @@ nav .nav .contenido-nav{
     transition: .5s linear;
     box-shadow:  5px 5px 15px hsl(0, 0%, 4%),
              -5px -5px 15px hsla(0, 0%, 18%, 0.5);
-             will-change: auto;
 }
 
 .links-contenido .link.cta:hover{
-    padding: 5px 25px;
+    padding: 5px 40px;
     background: rgb(216,216,211);
     -webkit-animation: jello-horizontal 1s ;
 	        animation: jello-horizontal 1s ;
@@ -106,6 +119,9 @@ nav .nav .contenido-nav{
  * animation jello-horizontal
  * ----------------------------------------
  */
+
+ @keyframes blur-in{0%{filter:blur(2.5px);opacity:0; transform: translateX(-1.5px);} 50%{filter: blur(1.5px); opacity: 0.5; transform: translateX(3px);} 100%{filter:blur(0);opacity:1; transform: translateX(0px);}}
+
  @-webkit-keyframes jello-horizontal {
     0% {
       -webkit-transform: scale3d(1, 1, 1);

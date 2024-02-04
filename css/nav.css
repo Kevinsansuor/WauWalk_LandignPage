@@ -6,7 +6,6 @@ nav .nav{
     height: 100px;
     align-items: center;
     justify-content: space-between;
-    
     overflow: hidden;
     background: var(--primary-100);
 }
@@ -25,7 +24,10 @@ nav .nav .contenido-nav{
     max-width: 250px;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
+    transition: .5s linear;
 }
+
 
 .logo-contenido .logotipo{
     display: flex;
@@ -35,16 +37,21 @@ nav .nav .contenido-nav{
     align-items: center;
 }
 
+.logo-contenido .logotipo img{
+    padding: 16px 17px;
+    border-radius: 5px;
+    box-shadow:  2px 5px 10px hsla(0, 0%, 4%, 0.25);
+}
+
 .logo-contenido .logotipo-nombre{
     display: flex;
     align-items: center;
     width: 50%;
     height: 40px;
-    border-left: 1px solid var(--primary-300);
-    padding: 0 15px 0 10px;
     font-family: var(--fuenteTextoIBM);
     font-size: var(--tamañoTextoH6);
     color: var(--text-100);
+    padding: 0 15px 0 10px;
 }
 
 .contenido-nav .links-contenido{
@@ -76,10 +83,9 @@ border: solid 2px var(--primary-300);
 }
 
 .links-contenido > .link.active{
-    background-color: var(--accent-100);
-    color: var(--primary-100);
-    box-shadow:  5px 5px 15px hsla(0, 0%, 4%, 0.5),
-             -5px -5px 15px hsla(0, 0%, 18%, 0.5);
+    border-bottom: solid var(--accent-100) 2px;
+    box-shadow:  2px 5px 15px hsla(0, 0%, 4%, 0.5),
+             -2px -5px 5px hsla(0, 0%, 18%, 0.25);
 }
 
 

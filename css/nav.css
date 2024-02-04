@@ -117,7 +117,7 @@ border: solid 2px var(--primary-300);
 .contenido-nav .navMobile-contenido{
     display: flex;
     height: max-content;
-    background-color: var(--text-100);
+    background-color: var(--text-200);
     height: 100px;
     width: 100px;
     justify-content: center;
@@ -165,10 +165,17 @@ border: solid 2px var(--primary-300);
     nav .nav{
         padding: 0;
         margin: 0;
+        height: 80px;
     }
 
     .contenido-nav .links-contenido{
         display: none;
+    }
+  }
+
+  @media screen and (max-width:450px) {
+    nav .nav{
+        height: 80px;
     }
   }
   

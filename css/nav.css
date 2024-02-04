@@ -178,6 +178,10 @@ border: solid 2px var(--primary-300);
         height: 80px;
     }
 
+    nav .nav .contenido-nav{
+        padding: 0 0px;
+        }
+
     .contenido-nav .links-contenido{
         display: none;
     }

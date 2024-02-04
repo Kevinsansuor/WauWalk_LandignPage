@@ -6,7 +6,7 @@ nav .nav{
     height: 100px;
     align-items: center;
     justify-content: space-between;
-    border-bottom: solid 1px var(--text-200);
+    
     overflow: hidden;
     background: var(--primary-100);
 }

@@ -172,6 +172,18 @@ border: solid 2px var(--primary-300);
         display: flex;
     }
 
+    .contenido-nav .links-contenido{
+        position: fixed;
+        top: 100px;
+        width: 100%;
+        height: calc(100vh - 100px);
+        background-color: red;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     nav .nav{
         padding: 0;
         margin: 0;
@@ -181,14 +193,17 @@ border: solid 2px var(--primary-300);
         padding: 0 0px;
         }
 
-    .contenido-nav .links-contenido{
-        display: none;
-    }
   }
 
   @media screen and (max-width:450px) {
     nav .nav{
         height: 80px;
+    }
+
+    .contenido-nav .links-contenido{
+        position: fixed;
+        top: 80px;
+        height: calc(100vh - 80px);
     }
   }
   

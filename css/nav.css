@@ -4,6 +4,7 @@ nav{
 }
 
 nav .nav{
+    z-index: 99999;
     position: fixed;
     top: 0;
     left: 0;
@@ -177,11 +178,34 @@ border: solid 2px var(--primary-300);
         top: 100px;
         width: 100%;
         height: calc(100vh - 100px);
-        background-color: red;
+        background-color: var(--primary-100);
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        z-index: 999;
+    }
+
+    .links-contenido .link{
+        padding: 0;
+        height: 100vh;
+        width: 100%;
+        font-size: var(--tamañoTextoH4);
+    }
+
+    .links-contenido .link.cta:hover{
+        padding: 0px;
+        animation: none;
+        border: solid var(--primary-100) 2px;
+    }
+
+    .links-contenido .link:hover{
+        animation: none;
+        border: solid 2px var(--primary-100);
+        }
+
+    .links-contenido{
+        transition: .5s linear;
     }
 
     nav .nav{
@@ -205,6 +229,10 @@ border: solid 2px var(--primary-300);
         top: 80px;
         height: calc(100vh - 80px);
     }
+
+    .links-contenido .link{
+        font-size: var(--tamañoTextoH5);
+        }
   }
   
 

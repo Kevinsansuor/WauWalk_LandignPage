@@ -12,7 +12,7 @@ body {
   }
   
   body::-webkit-scrollbar-track {
-    background: var(--bg-300);
+    background: var(--bg-100);
   }
   
   body::-webkit-scrollbar-thumb {

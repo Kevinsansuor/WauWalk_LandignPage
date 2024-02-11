@@ -4,7 +4,7 @@ nav{
 }
 
 nav .nav{
-    z-index: 99999;
+    z-index: 999999999;
     position: fixed;
     top: 0;
     left: 0;
@@ -174,6 +174,11 @@ border: solid 2px var(--primary-300);
     }
 
     .contenido-nav .links-contenido{
+        display: none;
+    }
+
+    .contenido-nav .links-contenido.active{
+        top: 100px;
         position: fixed;
         width: 100%;
         height: calc(100vh - 100px);
@@ -182,7 +187,7 @@ border: solid 2px var(--primary-300);
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        z-index: 999;
+        z-index: 99;
     }
 
     .links-contenido .link{
@@ -223,9 +228,9 @@ border: solid 2px var(--primary-300);
         height: 80px;
     }
 
-    .contenido-nav .links-contenido{
-        position: fixed;
+    .contenido-nav .links-contenido.active{
         top: 80px;
+        position: fixed;
         height: calc(100vh - 80px);
     }
 

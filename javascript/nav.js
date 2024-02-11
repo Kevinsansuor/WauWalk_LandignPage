@@ -12,3 +12,24 @@ function activarLink(event) {
 
 // Añadimos un evento "click" a cada elemento "link"
 links.forEach((link) => link.addEventListener("click", activarLink));
+
+// Seleccionamos el elemento "navMobile-contenido"
+const navMobileContenido = document.querySelector(".navMobile-contenido");
+
+// Agregamos un evento "click" al elemento
+navMobileContenido.addEventListener("click", function() {
+  // Función que se ejecuta al hacer clic en el elemento
+
+  const menu = document.querySelector(".links-contenido");
+
+  // Cambiamos la condición del `if`
+  if (menu.classList.contains("active")) {
+    // Eliminar la clase "active"
+    menu.classList.remove("active");
+  } else {
+    // Añadir la clase "active"
+    menu.classList.add("active");
+  }
+});
+
+

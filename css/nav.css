@@ -175,7 +175,6 @@ border: solid 2px var(--primary-300);
 
     .contenido-nav .links-contenido{
         position: fixed;
-        top: 90px;
         width: 100%;
         height: calc(100vh - 100px);
         background-color: var(--primary-100);

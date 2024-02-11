@@ -79,4 +79,5 @@ body{
     font-size: var(--tamañoTexto);
     background-color: var(--bg-100);
     min-height: 100vh;
+    background-color: red;
 }

@@ -173,16 +173,26 @@ border: solid 2px var(--primary-300);
         display: flex;
     }
 
+    .links-contenido .link{
+        transition: linear .5s ease-in;
+    }
+
     .links-contenido .link:hover{
         border: none;
     }
 
-    .links-contenido > .link.active{
+    .links-contenido > .link:active{
     border-bottom: none;
     background-color: var(--text-200);
     color: var(--primary-100);
-    animation:scale-up-center 0.25s;
+    animation:scale-up-center 0.5s;
     }
+
+    .links-contenido > .link.active{
+        border-bottom: none;
+        background-color: var(--text-200);
+        color: var(--primary-100);
+        }
 
     .contenido-nav .links-contenido{
         top: 100px;

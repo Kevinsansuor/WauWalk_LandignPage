@@ -31,5 +31,3 @@ navMobileContenido.addEventListener("click", function() {
     menu.classList.add("active");
   }
 });
-
-

@@ -8,8 +8,8 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 25px 5%;
-    height: calc(100vh - (25px + 115px));
+    height: calc(100vh - 90px);
+    margin: 25px 5.5%;
     gap: .25%;
 }
 
@@ -27,7 +27,8 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: max-content;
+    overflow: hidden;
+    height: 65%;
     padding: 25px 0;
     border-radius: 50px;
     background: rgb(247,247,242);
@@ -53,6 +54,7 @@ box-shadow:  5px 5px 20px #151515c0,
 }
 
 .solutions-content .content-tittle{
+    padding: 0 25px;
     width: fit-content;
     line-height: 80px;
     border-bottom: 2px dashed var(--text-100);
@@ -70,7 +72,7 @@ box-shadow:  5px 5px 20px #151515c0,
     display: flex;
     flex-direction: column;
     gap: 10px;
-    padding: 25px 5px;
+    padding: 25px 25px;
 }
 
 .solutions-content .content-pd{
